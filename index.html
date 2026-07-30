@@ -8,7 +8,7 @@
     content="Conheça o trabalho da Associação de Proteção Animal de Lagoa da Prata, sua equipe, parceiros e redes sociais." />
   <meta name="theme-color" content="#064f27" />
   <title>APA | Proteção Animal de Lagoa da Prata</title>
-  <link rel="icon" href="img/logo-favicon.png" type="image/png" />
+  <link rel="icon" href="img/identidade/logo-favicon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
   <script src="script.js" defer></script>
 </head>
@@ -19,7 +19,7 @@
   <header class="site-header" data-header>
     <div class="container header-inner">
       <a class="brand" href="#inicio" aria-label="APA — página inicial">
-        <img src="img/logo.jpeg" alt="Logo da Associação Proteção Animal" />
+        <img src="img/identidade/logo.jpeg" alt="Logo da Associação Proteção Animal" />
         <span class="brand-copy">
           <strong>APA</strong>
           <small>Proteção Animal</small>
@@ -35,11 +35,11 @@
 
       <nav id="main-navigation" class="main-nav" aria-label="Navegação principal" data-menu>
         <a href="#quem-somos">Quem somos</a>
-          <a href="#galeria">Galeria</a>
-          <a href="#colaboradores">Colaboradores</a>
-          <a href="#parceiros">Parceiros</a>
-          <a href="#editais">Editais</a>
-          <a class="nav-donate" href="#doe">Seja doador</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#colaboradores">Colaboradores</a>
+        <a href="#parceiros">Parceiros</a>
+        <a href="#editais">Editais</a>
+        <a class="nav-donate" href="#doe">Seja doador</a>
         <a class="nav-highlight" href="#redes">Redes sociais</a>
       </nav>
     </div>
@@ -72,7 +72,7 @@
         <div class="hero-visual reveal" aria-label="Logo da Associação Proteção Animal">
           <div class="logo-halo" aria-hidden="true"></div>
           <div class="logo-card">
-            <img src="img/logo.jpeg" alt="APA — Associação de Proteção Animal" />
+            <img src="img/identidade/logo.jpeg" alt="APA — Associação de Proteção Animal" />
           </div>
           <span class="floating-note note-one" aria-hidden="true">Cuidado</span>
           <span class="floating-note note-two" aria-hidden="true">Respeito</span>
@@ -179,18 +179,18 @@
                 <div class="action-collage" aria-label="Fotos da ação de confecção de casinhas">
                   <button class="action-photo action-photo-main" type="button" data-gallery-item
                     data-title="Casinhas confeccionadas pela parceria APAC + APA">
-                    <img src="img/acao_1.jpg"
+                    <img src="img/acoes/acao_1.jpg"
                       alt="Casinhas de madeira azuis confeccionadas pela parceria entre APAC e APA" />
                     <span aria-hidden="true">+</span>
                   </button>
                   <button class="action-photo" type="button" data-gallery-item
                     data-title="Abrigo e cuidado para os animais de rua">
-                    <img src="img/acao_2.jpg" alt="Cão ao lado de casinhas de madeira produzidas na ação" />
+                    <img src="img/acoes/acao_2.jpg" alt="Cão ao lado de casinhas de madeira produzidas na ação" />
                     <span aria-hidden="true">+</span>
                   </button>
                   <button class="action-photo" type="button" data-gallery-item
                     data-title="Registro da parceria entre APAC e APA">
-                    <img src="img/acao_3.jpg" alt="Representantes da ação ao lado das casinhas confeccionadas" />
+                    <img src="img/acoes/acao_3.jpg" alt="Representantes da ação ao lado das casinhas confeccionadas" />
                     <span aria-hidden="true">+</span>
                   </button>
                 </div>
@@ -198,13 +198,21 @@
                   <span class="action-number">APAC + APA</span>
                   <h4>Casinhas para animais de rua</h4>
                   <p>Confecção de casinhas de madeira para proteger os animais em situação de rua de Lagoa da Prata.</p>
+                  <a class="action-link" href="https://forms.gle/b7dYCFPe4ktmS6gd7" target="_blank"
+                    rel="noopener noreferrer">
+                    Tenho interesse em uma casinha
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path d="M7 17 17 7M9 7h8v8" />
+                    </svg>
+                  </a>
                 </div>
               </article>
 
               <article class="action-card action-card-video">
                 <button class="action-video-trigger" type="button" aria-label="Reproduzir vídeo da feirinha de adoção"
-                  data-video-trigger data-video-src="img/acao_4.mp4">
-                  <img src="img/acao_4-poster.png" alt="Feirinha de adoção promovida pela APA" />
+                  data-video-trigger data-video-src="img/acoes/acao_4.mp4" data-video-poster="img/acoes/acao_4-poster.png"
+                  data-video-title="Feirinha de adoção">
+                  <img src="img/acoes/acao_4-poster.png" alt="Feirinha de adoção promovida pela APA" />
                   <span class="video-type">
                     <svg aria-hidden="true" viewBox="0 0 24 24">
                       <path d="m9 7 8 5-8 5Z" />
@@ -224,12 +232,53 @@
                 </div>
               </article>
 
-              <article class="action-card action-card-empty">
-                <div class="action-placeholder">
-                  <img src="img/galeria-acoes.svg" alt="" />
-                </div>
+              <article class="action-card action-card-video">
+                <button class="action-video-trigger action-video-campaign" type="button"
+                  aria-label="Reproduzir vídeo da campanha de vacinação"
+                  data-video-trigger data-video-src="img/acoes/acao_5.mp4" data-video-poster="img/acoes/acao_5-poster.png"
+                  data-video-title="Campanha de vacinação">
+                  <img src="img/acoes/acao_5-poster.png" alt="Campanha de vacinação promovida pela APA" />
+                  <span class="video-type">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path d="m9 7 8 5-8 5Z" />
+                    </svg>
+                    Vídeo
+                  </span>
+                  <span class="video-play" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="m9 7 8 5-8 5Z" />
+                    </svg>
+                  </span>
+                </button>
                 <div class="action-card-body">
-                  <h4>Ação 03</h4>
+                  <span class="action-number">Campanhas</span>
+                  <h4>Campanha de vacinação</h4>
+                  <p>Vacinação e cuidado responsável com a saúde dos animais.</p>
+                </div>
+              </article>
+
+              <article class="action-card action-card-video">
+                <button class="action-video-trigger action-video-campaign" type="button"
+                  aria-label="Reproduzir vídeo da campanha de adoção responsável"
+                  data-video-trigger data-video-src="img/acoes/acao_6.mp4" data-video-poster="img/acoes/acao_6-poster.png"
+                  data-video-title="Campanha de adoção responsável">
+                  <img src="img/acoes/acao_6-poster.png" alt="Campanha de adoção responsável promovida pela APA" />
+                  <span class="video-type">
+                    <svg aria-hidden="true" viewBox="0 0 24 24">
+                      <path d="m9 7 8 5-8 5Z" />
+                    </svg>
+                    Vídeo
+                  </span>
+                  <span class="video-play" aria-hidden="true">
+                    <svg viewBox="0 0 24 24">
+                      <path d="m9 7 8 5-8 5Z" />
+                    </svg>
+                  </span>
+                </button>
+                <div class="action-card-body">
+                  <span class="action-number">Campanhas</span>
+                  <h4>Campanha de adoção responsável</h4>
+                  <p>Conscientização para adoções responsáveis e cheias de cuidado.</p>
                 </div>
               </article>
             </div>
@@ -245,27 +294,27 @@
 
             <div class="rescued-grid">
               <button class="rescued-photo" type="button" data-gallery-item data-title="Animal resgatado pela APA">
-                <img src="img/resgate_1.jpg" alt="Filhote de cachorro marrom resgatado pela APA" loading="lazy" />
+                <img src="img/resgates/resgate_1.jpg" alt="Filhote de cachorro marrom resgatado pela APA" loading="lazy" />
                 <span aria-hidden="true">+</span>
               </button>
               <button class="rescued-photo" type="button" data-gallery-item data-title="Animais resgatados pela APA">
-                <img src="img/resgate_2.jpg" alt="Dois filhotes de gato pretos resgatados pela APA" loading="lazy" />
+                <img src="img/resgates/resgate_2.jpg" alt="Dois filhotes de gato pretos resgatados pela APA" loading="lazy" />
                 <span aria-hidden="true">+</span>
               </button>
               <button class="rescued-photo" type="button" data-gallery-item data-title="Animal resgatado pela APA">
-                <img src="img/resgate_3.jpg" alt="Filhote de cachorro preto resgatado pela APA" loading="lazy" />
+                <img src="img/resgates/resgate_3.jpg" alt="Filhote de cachorro preto resgatado pela APA" loading="lazy" />
                 <span aria-hidden="true">+</span>
               </button>
               <button class="rescued-photo" type="button" data-gallery-item data-title="Animal resgatado pela APA">
-                <img src="img/resgate_4.jpg" alt="Cachorro jovem marrom resgatado pela APA" loading="lazy" />
+                <img src="img/resgates/resgate_4.jpg" alt="Cachorro jovem marrom resgatado pela APA" loading="lazy" />
                 <span aria-hidden="true">+</span>
               </button>
               <button class="rescued-photo" type="button" data-gallery-item data-title="Animal resgatado pela APA">
-                <img src="img/resgate_5.jpg" alt="Filhote de gato resgatado pela APA" loading="lazy" />
+                <img src="img/resgates/resgate_5.jpg" alt="Filhote de gato resgatado pela APA" loading="lazy" />
                 <span aria-hidden="true">+</span>
               </button>
               <button class="rescued-photo" type="button" data-gallery-item data-title="Animal resgatado pela APA">
-                <img src="img/resgate_6.jpg" alt="Cachorro marrom acolhido após o resgate" loading="lazy" />
+                <img src="img/resgates/resgate_6.jpg" alt="Cachorro marrom acolhido após o resgate" loading="lazy" />
                 <span aria-hidden="true">+</span>
               </button>
             </div>
@@ -279,23 +328,35 @@
               </div>
             </div>
 
-            <div class="stories-grid">
-              <article class="story-placeholder"><img src="img/galeria-historias.svg" alt="" />
-                <div>
-                  <h4>História 01</h4>
-                </div>
-              </article>
-              <article class="story-placeholder"><img src="img/galeria-historias.svg" alt="" />
-                <div>
-                  <h4>História 02</h4>
-                </div>
-              </article>
-              <article class="story-placeholder"><img src="img/galeria-historias.svg" alt="" />
-                <div>
-                  <h4>História 03</h4>
-                </div>
-              </article>
-            </div>
+            <article class="story-feature">
+              <div class="story-feature-heading">
+                <span>Resgate, tratamento e adoção</span>
+                <h4>Pretinho: do resgate ao novo lar</h4>
+              </div>
+
+              <div class="story-sequence" aria-label="História do Pretinho em quatro etapas">
+                <button class="story-frame" type="button" data-gallery-item data-title="Conheça a história do Pretinho">
+                  <img src="img/historias/historia_1.jpg" alt="Apresentação da história do Pretinho e de sua recuperação"
+                    loading="lazy" />
+                  <span class="story-step">1 de 4</span>
+                </button>
+                <button class="story-frame" type="button" data-gallery-item data-title="Pretinho antes do tratamento">
+                  <img src="img/historias/historia_2.jpg" alt="Pretinho antes de receber os tratamentos"
+                    loading="lazy" />
+                  <span class="story-step">2 de 4</span>
+                </button>
+                <button class="story-frame" type="button" data-gallery-item data-title="Pretinho durante os tratamentos">
+                  <img src="img/historias/historia_3.jpg" alt="Pretinho durante os tratamentos e sua recuperação"
+                    loading="lazy" />
+                  <span class="story-step">3 de 4</span>
+                </button>
+                <button class="story-frame" type="button" data-gallery-item data-title="Pretinho adotado">
+                  <img src="img/historias/historia_4.jpg" alt="Pretinho recuperado e adotado por uma nova família"
+                    loading="lazy" />
+                  <span class="story-step">4 de 4</span>
+                </button>
+              </div>
+            </article>
           </div>
         </div>
       </div>
@@ -312,7 +373,7 @@
         <div class="collaborator-carousel reveal" role="region" aria-roledescription="carrossel"
           aria-label="Colaboradores da APA" data-collaborator-carousel>
           <div class="carousel-toolbar">
-            <span class="provisional-note">Fotos e nomes provisórios</span>
+            <span class="team-note">Equipe APA</span>
             <div class="carousel-controls" aria-label="Controles do carrossel">
               <button type="button" aria-label="Ver colaboradores anteriores" data-carousel-prev>
                 <svg aria-hidden="true" viewBox="0 0 24 24">
@@ -330,54 +391,64 @@
           <div class="collaborator-viewport" tabindex="0" data-carousel-viewport>
             <div class="collaborator-track" data-carousel-track>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-feminino.webp" alt="Foto provisória de Ana"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Ana</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_1.jpeg" alt="Helida Gama"
+                    width="1020" height="1280" loading="lazy" style="object-position: 50% 38%;" /></div>
+                <h3>Helida Gama</h3>
+                <p>Presidente</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-masculino.webp" alt="Foto provisória de Bruno"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Bruno</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_2.jpeg" alt="Maria Eduarda"
+                    width="1200" height="1600" loading="lazy" style="object-position: 50% 28%;" /></div>
+                <h3>Maria Eduarda</h3>
+                <p>Vice Presidente</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-feminino.webp" alt="Foto provisória de Carla"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Carla</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_3.jpeg" alt="Denio Lamounier"
+                    width="1024" height="1536" loading="lazy" style="object-position: 50% 32%;" /></div>
+                <h3>Denio Lamounier</h3>
+                <p>2º Secretário</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-masculino.webp" alt="Foto provisória de Daniel"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Daniel</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_4.jpeg" alt="Maria Clara"
+                    width="720" height="1280" loading="lazy" style="object-position: 50% 30%;" /></div>
+                <h3>Maria Clara</h3>
+                <p>2º Tesoureiro</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-feminino.webp" alt="Foto provisória de Fernanda"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Fernanda</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_5.jpeg" alt="Rosa Vidal"
+                    width="1200" height="1600" loading="lazy" style="object-position: 50% 30%;" /></div>
+                <h3>Rosa Vidal</h3>
+                <p>Conselheira</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-masculino.webp" alt="Foto provisória de Gustavo"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Gustavo</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_6.jpeg" alt="Carlos Kuster"
+                    width="928" height="1392" loading="lazy" style="object-position: 50% 18%;" /></div>
+                <h3>Carlos Kuster</h3>
+                <p>Voluntário</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-feminino.webp" alt="Foto provisória de Juliana"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Juliana</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_7.jpeg" alt="Michael Silva"
+                    width="1170" height="1425" loading="lazy" style="object-position: 50% 30%;" /></div>
+                <h3>Michael Silva</h3>
+                <p>Conselheiro</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-masculino.webp" alt="Foto provisória de Marcos"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Marcos</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_8.jpeg" alt="Carlos Eduardo"
+                    width="1066" height="1600" loading="lazy" style="object-position: 50% 25%;" /></div>
+                <h3>Carlos Eduardo</h3>
+                <p>Voluntário</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-feminino.webp" alt="Foto provisória de Patrícia"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Patrícia</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_9.jpeg" alt="Michel Henrique"
+                    width="593" height="701" loading="lazy" style="object-position: 50% 8%;" /></div>
+                <h3>Michel Henrique</h3>
+                <p>Conselheiro</p>
               </article>
               <article class="collaborator-card">
-                <div class="collaborator-photo"><img src="img/avatar-masculino.webp" alt="Foto provisória de Rafael"
-                    width="720" height="720" loading="lazy" /></div>
-                <h3>Rafael</h3>
+                <div class="collaborator-photo"><img src="img/colaboradores/colaborador_10.jpeg" alt="Carla Cristina"
+                    width="1170" height="1055" loading="lazy" style="object-position: 50% 45%;" /></div>
+                <h3>Carla Cristina</h3>
+                <p>1ª Secretária</p>
               </article>
             </div>
           </div>
@@ -385,76 +456,88 @@
       </div>
     </section>
 
-      <section class="section partners" id="parceiros">
+    <section class="section partners" id="parceiros">
       <div class="container partners-layout">
-          <div class="section-intro reveal">
-            <span class="eyebrow eyebrow-dark">Nossos parceiros</span>
-            <h2>Parcerias que fortalecem a proteção animal.</h2>
-            <p>Empresas e instituições que caminham com a APA e fortalecem a proteção animal em Lagoa da Prata.</p>
-          </div>
+        <div class="section-intro reveal">
+          <span class="eyebrow eyebrow-dark">Nossos parceiros</span>
+          <h2>Parcerias que fortalecem a proteção animal.</h2>
+          <p>Empresas e instituições que caminham com a APA e fortalecem a proteção animal em Lagoa da Prata.</p>
+        </div>
 
         <div class="partner-grid reveal" aria-label="Marcas parceiras da APA">
-          <div class="partner-logo"><img src="img/parceiro_1.webp" alt="Paixão Animal" loading="lazy" /></div>
-          <div class="partner-logo"><img src="img/parceiro_2.webp" alt="Câmara Municipal de Lagoa da Prata" loading="lazy" /></div>
-          <div class="partner-logo"><img src="img/parceiro_3.webp" alt="Brasão de Lagoa da Prata" loading="lazy" /></div>
-          <div class="partner-logo"><img src="img/parceiro_4.webp" alt="APAC Lagoa da Prata" loading="lazy" /></div>
-          <div class="partner-logo"><img src="img/parceiro_5.webp" alt="Acertando o Passo — Centro de Ressocialização e Acolhimento" loading="lazy" /></div>
-          <div class="partner-logo"><img src="img/parceiro_6.webp" alt="Pet Lovers Club" loading="lazy" /></div>
+          <div class="partner-logo"><img src="img/parceiros/parceiro_1-hq.webp" alt="Paixão Animal" loading="lazy" /></div>
+          <div class="partner-logo"><img src="img/parceiros/parceiro_2-hq.webp" alt="Câmara Municipal de Lagoa da Prata"
+              loading="lazy" /></div>
+          <div class="partner-logo"><img src="img/parceiros/parceiro_3-hq.webp" alt="Brasão de Lagoa da Prata" loading="lazy" />
+          </div>
+          <div class="partner-logo"><img src="img/parceiros/parceiro_4-hq.webp" alt="APAC Lagoa da Prata" loading="lazy" /></div>
+          <div class="partner-logo"><img src="img/parceiros/parceiro_5-hq.webp"
+              alt="Acertando o Passo — Centro de Ressocialização e Acolhimento" loading="lazy" /></div>
+          <div class="partner-logo"><img src="img/parceiros/parceiro_6-hq.webp" alt="Pet Lovers Club" loading="lazy" /></div>
         </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section notices-section" id="editais">
-        <div class="container">
-          <div class="section-heading reveal">
-            <div>
-              <span class="eyebrow eyebrow-dark">Transparência</span>
-              <h2>Editais e documentos.</h2>
+    <section class="section notices-section" id="editais">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <span class="eyebrow eyebrow-dark">Transparência</span>
+            <h2>Editais e documentos.</h2>
+          </div>
+          <p>Consulte e baixe os documentos publicados pela associação.</p>
+        </div>
+
+        <div class="notices-list reveal">
+          <article class="notice-item">
+            <time datetime="2026-07"><strong>JUL</strong><span>2026</span></time>
+            <div class="notice-info">
+              <small>PDF · 2 páginas</small>
+              <h3>Termo de Responsabilidade de Adoção</h3>
             </div>
-            <p>Consulte e baixe os documentos publicados pela associação.</p>
-          </div>
+            <a href="docs/edital_2.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir Termo de Responsabilidade de Adoção em PDF em uma nova aba">
+              <span>Baixar PDF</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 3v12m-5-5 5 5 5-5M5 21h14" />
+              </svg>
+            </a>
+          </article>
 
-          <div class="notices-list reveal">
-            <article class="notice-item">
-              <time datetime="2025-08-01"><strong>01</strong><span>AGO · 2025</span></time>
-              <div class="notice-info">
-                <small>PDF · 6 páginas</small>
-                <h3>Convênio nº 023/2025 — Projeto Casa de Acolhimento Temporário Esperança Animal</h3>
-              </div>
-              <a href="docs/edital_1.pdf" target="_blank" rel="noopener" aria-label="Abrir Convênio nº 023/2025 em PDF em uma nova aba">
-                <span>Baixar PDF</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 21h14" /></svg>
-              </a>
-            </article>
+          <article class="notice-item">
+            <time datetime="2026-07"><strong>JUL</strong><span>2026</span></time>
+            <div class="notice-info">
+              <small>PDF · 2 páginas</small>
+              <h3>Termo de Responsabilidade para Cessão de Casinha Destinada a Animais em Situação de Rua</h3>
+            </div>
+            <a href="docs/edital_3.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir Termo de Responsabilidade para Cessão de Casinha em PDF em uma nova aba">
+              <span>Baixar PDF</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 3v12m-5-5 5 5 5-5M5 21h14" />
+              </svg>
+            </a>
+          </article>
 
-            <article class="notice-item notice-example">
-              <time datetime="2025-08-01"><strong>01</strong><span>AGO · 2025</span></time>
-              <div class="notice-info">
-                <small>PDF · Exemplo</small>
-                <h3>Convênio nº 023/2025 — Exemplo de publicação 02</h3>
-              </div>
-              <a href="docs/edital_1.pdf" target="_blank" rel="noopener" aria-label="Abrir exemplo de publicação 02 em PDF em uma nova aba">
-                <span>Baixar PDF</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 21h14" /></svg>
-              </a>
-            </article>
-
-            <article class="notice-item notice-example">
-              <time datetime="2025-08-01"><strong>01</strong><span>AGO · 2025</span></time>
-              <div class="notice-info">
-                <small>PDF · Exemplo</small>
-                <h3>Convênio nº 023/2025 — Exemplo de publicação 03</h3>
-              </div>
-              <a href="docs/edital_1.pdf" target="_blank" rel="noopener" aria-label="Abrir exemplo de publicação 03 em PDF em uma nova aba">
-                <span>Baixar PDF</span>
-                <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3v12m-5-5 5 5 5-5M5 21h14" /></svg>
-              </a>
-            </article>
-          </div>
+          <article class="notice-item">
+            <time datetime="2025-08"><strong>AGO</strong><span>2025</span></time>
+            <div class="notice-info">
+              <small>PDF · 6 páginas</small>
+              <h3>Convênio nº 023/2025 — Projeto Casa de Acolhimento Temporário Esperança Animal</h3>
+            </div>
+            <a href="docs/edital_1.pdf" target="_blank" rel="noopener"
+              aria-label="Abrir Convênio nº 023/2025 em PDF em uma nova aba">
+              <span>Baixar PDF</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M12 3v12m-5-5 5 5 5-5M5 21h14" />
+              </svg>
+            </a>
+          </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="donate-section" id="doe">
+    <section class="donate-section" id="doe">
       <div class="container donation-shell">
         <div class="donation-copy reveal">
           <span class="eyebrow eyebrow-dark">Seja doador</span>
@@ -477,7 +560,7 @@
 
         <div class="pix-card reveal">
           <div class="pix-qr">
-            <img src="img/pix-qrcode.png" alt="QR Code Pix para doação à APA" width="588" height="588" />
+            <img src="img/doacoes/pix-qrcode.png" alt="QR Code Pix para doação à APA" width="588" height="588" />
             <small>APA LP</small>
           </div>
 
@@ -555,7 +638,7 @@
   <footer class="site-footer">
     <div class="container footer-main">
       <a class="brand brand-footer" href="#inicio">
-        <img src="img/logo.jpeg" alt="" />
+        <img src="img/identidade/logo.jpeg" alt="" />
         <span class="brand-copy"><strong>APA</strong><small>Proteção Animal</small></span>
       </a>
       <p>Associação de Proteção Animal de Lagoa da Prata · Minas Gerais<br />CNPJ: 52.609.619/0001-00</p>
@@ -575,7 +658,7 @@
 
   <dialog class="video-modal" aria-labelledby="video-modal-title" data-video-modal>
     <button class="modal-close" type="button" aria-label="Fechar vídeo" data-video-modal-close>×</button>
-    <video controls playsinline preload="metadata" poster="img/acao_4-poster.png" data-modal-video>
+    <video controls playsinline preload="metadata" data-modal-video>
       Seu navegador não oferece suporte à reprodução de vídeo.
     </video>
     <p id="video-modal-title">Feirinha de adoção</p>

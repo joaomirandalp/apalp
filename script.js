@@ -2,12 +2,15 @@ const header = document.querySelector("[data-header]");
 const menuButton = document.querySelector("[data-menu-button]");
 const menu = document.querySelector("[data-menu]");
 const navigationLinks = [...document.querySelectorAll(".main-nav a")];
+const internalLinks = [...document.querySelectorAll('a[href^="#"]')]
+  .filter((link) => link.getAttribute("href") !== "#" && !link.classList.contains("skip-link"));
 const sections = [...document.querySelectorAll("main section[id]")];
 const modal = document.querySelector("[data-gallery-modal]");
 const modalImage = document.querySelector("[data-modal-image]");
 const modalTitle = document.querySelector("[data-modal-title]");
 const videoModal = document.querySelector("[data-video-modal]");
 const modalVideo = document.querySelector("[data-modal-video]");
+const modalVideoTitle = document.querySelector("#video-modal-title");
 const toast = document.querySelector("[data-toast]");
 const collaboratorCarousel = document.querySelector("[data-collaborator-carousel]");
 const galleryTabs = [...document.querySelectorAll("[data-gallery-tab]")];
@@ -30,7 +33,49 @@ menuButton.addEventListener("click", () => {
   document.body.classList.toggle("menu-open", !isOpen);
 });
 
-navigationLinks.forEach((link) => link.addEventListener("click", closeMenu));
+const getSectionScrollTop = (target) => {
+  if (target.id === "inicio") return 0;
+
+  const headerHeight = header.getBoundingClientRect().height;
+  const content = target.firstElementChild || target;
+  const contentRect = content.getBoundingClientRect();
+  const availableHeight = window.innerHeight - headerHeight;
+  const minimumGap = window.innerWidth <= 720 ? 16 : 22;
+  const balancedGap = contentRect.height < availableHeight
+    ? (availableHeight - contentRect.height) / 2
+    : minimumGap;
+  const gap = Math.max(minimumGap, balancedGap);
+
+  return Math.max(0, window.scrollY + contentRect.top - headerHeight - gap);
+};
+
+const scrollToSection = (target, behavior = "smooth") => {
+  window.scrollTo({ top: getSectionScrollTop(target), behavior });
+};
+
+internalLinks.forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const hash = link.getAttribute("href");
+    const target = document.querySelector(hash);
+    if (!target) return;
+
+    event.preventDefault();
+    closeMenu();
+    scrollToSection(target);
+    window.history.pushState(null, "", hash);
+  });
+});
+
+window.addEventListener("popstate", () => {
+  const target = document.querySelector(window.location.hash || "#inicio");
+  if (target) scrollToSection(target, "auto");
+});
+
+window.addEventListener("load", () => {
+  if (!window.location.hash) return;
+  const target = document.querySelector(window.location.hash);
+  if (target) requestAnimationFrame(() => scrollToSection(target, "auto"));
+});
 
 window.addEventListener("scroll", () => {
   header.classList.toggle("scrolled", window.scrollY > 20);
@@ -116,6 +161,7 @@ modal.addEventListener("cancel", () => document.body.classList.remove("modal-ope
 const closeVideoModal = () => {
   modalVideo.pause();
   modalVideo.removeAttribute("src");
+  modalVideo.removeAttribute("poster");
   modalVideo.load();
   videoModal.close();
   document.body.classList.remove("modal-open");
@@ -124,6 +170,8 @@ const closeVideoModal = () => {
 document.querySelectorAll("[data-video-trigger]").forEach((trigger) => {
   trigger.addEventListener("click", () => {
     modalVideo.src = trigger.dataset.videoSrc;
+    modalVideo.poster = trigger.dataset.videoPoster || "";
+    modalVideoTitle.textContent = trigger.dataset.videoTitle || "Vídeo da APA";
     videoModal.showModal();
     document.body.classList.add("modal-open");
     modalVideo.play().catch(() => {

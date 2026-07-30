@@ -4,13 +4,15 @@ Site institucional estático desenvolvido em HTML, CSS e JavaScript puros, pront
 
 ## Personalização
 
-- A galeria possui abas para ações, animais resgatados e histórias. As fotos `img/acao_1.jpg`, `img/acao_2.jpg` e `img/acao_3.jpg` estão agrupadas na Ação 01; os espaços das ações 02 e 03 estão prontos para receber novas imagens.
-- A Ação 02 apresenta o vídeo `img/acao_4.mp4`, com capa em `img/acao_4-poster.png` e reprodução iniciada após o clique.
-- A aba de animais resgatados utiliza as imagens `img/resgate_1.jpg` a `img/resgate_6.jpg`, sem exibir nomes.
-- A seção “Seja doador” usa o QR Pix estático `img/pix-qrcode.png`, sem valor fixo, e a chave CNPJ `52.609.619/0001-00`.
-- A seção “Editais” possui três entradas de exemplo apontando para `docs/edital_1.pdf`. O documento real é o Convênio nº 023/2025, com vigência iniciada em 01/08/2025.
-- Troque os avatares `img/avatar-*.webp` e os nomes provisórios do carrossel em `index.html` pelos dados oficiais dos colaboradores.
-- As marcas parceiras usam as versões otimizadas `img/parceiro_1.webp` a `img/parceiro_6.webp`; os arquivos originais foram preservados.
+- A galeria possui abas para ações, animais resgatados e histórias. As mídias de ações ficam em `img/acoes/`, as fotos de resgates em `img/resgates/` e os materiais de histórias em `img/historias/`.
+- A aba “Histórias” apresenta a história do Pretinho em quatro etapas, usando `historia_1.jpg` a `historia_4.jpg` em sequência e com ampliação ao clicar.
+- A Ação 02 apresenta o vídeo `img/acoes/acao_4.mp4`, com capa em `img/acoes/acao_4-poster.png` e reprodução iniciada após o clique.
+- As Ações 03 e 04 apresentam separadamente as campanhas de vacinação e de adoção responsável, usando `acao_5.mp4` e `acao_6.mp4`.
+- A aba de animais resgatados utiliza as imagens `img/resgates/resgate_1.jpg` a `img/resgates/resgate_6.jpg`, sem exibir nomes.
+- A seção “Seja doador” usa o QR Pix estático `img/doacoes/pix-qrcode.png`, sem valor fixo, e a chave CNPJ `52.609.619/0001-00`.
+- A seção “Editais” lista `edital_1.pdf`, `edital_2.pdf` e `edital_3.pdf`, ordenados do documento mais recente para o mais antigo.
+- O carrossel de colaboradores utiliza `img/colaboradores/colaborador_1.jpeg` a `colaborador_10.jpeg`, com nomes e cargos oficiais em `index.html`.
+- As marcas parceiras usam as versões restauradas `img/parceiros/parceiro_1-hq.webp` a `img/parceiros/parceiro_6-hq.webp`; os arquivos anteriores e originais foram preservados na mesma pasta.
 - Preencha os atributos `href` dos links em `#redes` com os endereços oficiais da APA.
 
 ## Publicação
