@@ -10,8 +10,8 @@ Site institucional estático desenvolvido em HTML, CSS e JavaScript puros, pront
 - As Ações 03 e 04 apresentam separadamente as campanhas de vacinação e de adoção responsável, usando `acao_5.mp4` e `acao_6.mp4`.
 - A aba de animais resgatados utiliza as imagens `img/resgates/resgate_1.jpg` a `img/resgates/resgate_6.jpg`, sem exibir nomes.
 - A seção “Seja doador” usa o QR Pix estático `img/doacoes/pix-qrcode.png`, sem valor fixo, e a chave CNPJ `52.609.619/0001-00`.
-- A seção “Editais” lista `edital_1.pdf`, `edital_2.pdf` e `edital_3.pdf`, ordenados do documento mais recente para o mais antigo.
-- O carrossel de colaboradores utiliza `img/colaboradores/colaborador_1.jpeg` a `colaborador_10.jpeg`, com nomes e cargos oficiais em `index.html`.
+- A seção “Editais” lista `edital_1.pdf` a `edital_4.pdf`, ordenados do documento mais recente para o mais antigo.
+- O carrossel de colaboradores utiliza `img/colaboradores/colaborador_1.jpeg` a `colaborador_11.jpeg`, com nomes e cargos oficiais em `index.html`.
 - As marcas parceiras usam as versões restauradas `img/parceiros/parceiro_1-hq.webp` a `img/parceiros/parceiro_6-hq.webp`; os arquivos anteriores e originais foram preservados na mesma pasta.
 - Preencha os atributos `href` dos links em `#redes` com os endereços oficiais da APA.
 
